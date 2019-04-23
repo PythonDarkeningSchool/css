@@ -10,6 +10,20 @@
 
 ![rules](images/rules.JPG)
 
+## Specificity
+
+Example:
+
+![specificity_1](images/specificity_1.JPG)
+
+The rules are:
+
+![specificity_rules](images/specificity_rules.JPG)
+
+And the winner is:
+
+![specificity_2](images/specificity_2.JPG)
+
 ## Selectors
 
 
@@ -69,3 +83,21 @@ e.g: *find all images with the attribute alt=spacer and set the padding to Xpx*
 ### Pseudo class
 
 ![pseudo_class](images/pseudo_class.JPG)
+
+# CSS and the box model
+
+## The big Three
+
+![box_model](images/box_model.JPG)
+
+## Top, Right, Button, Left
+
+Example:
+
+```css
+ul li {
+    margin: 0 3px 0 3px;
+}
+```
+
+respectively are: top. right, button and left
