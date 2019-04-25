@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Jquery CDN (to load HTML pages) -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../../css/dashboard/dashboard.css"> 
+    
+  </head>
+  <body>
+  
+    <!-- Header Button -->
+    <div class="d-flex justify-content-end" id="dasbboard-menu-icon">
+      <button class="menu-button" type="button" data-toggle="collapse" data-target="#header-button" aria-expanded="true" aria-controls="headerbutton">
+        <span><img src="../../icons/menu.svg"></span>
+      </button>
+    </div>
+    <!-- Header Button Collapsible Section-->
+    <div class="d-flex justify-content-end">
+      <div class="collapse-show" id="header-button">
+        <!-- User Card -->
+        <div class="card mb-3 border-0" style="max-width: 500px;">
+          <div class="row no-gutters">
+            <div class="col-md-3">
+              <img src="../../images/apple.jpg" class="card-img border border-info">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h6>Role <span class="badge badge-secondary">Developer</span></h6>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <button type="button" class="btn btn-outline-warning"><spam><img style="width: 30px;" src="../../icons/logout.png"></spam>Log out</button>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- User Card -->
+      </div>
+    </div>
+    
+    
+    <!-- Main Section (container) -->
+    <div class="mainSection">
+      <!-- Panel -->
+      <div class="mainPanel">
+        <div class="panel-icons">
+          <!-- Admin button -->
+          <button class="panel-button" type="button" data-toggle="collapse" data-target="#admin" aria-expanded="false" aria-controls="admin"><span><img src="../../icons/admin.png"></span></button>
+          <!-- Collapse for admin button -->
+          <div class="collapse multi-collapse" id="admin">
+            <div class="row">
+              <div class="col-3">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <!-- add-a-user -->
+                  <a class="btn btn-outline-info border-0 btn-custom" data-toggle="pill" href="#add-a-user" role="tab" aria-controls="v-pills-home" aria-selected="true"><span><img src="../../icons/add_user.png"></span><span class="badge badge-pill badge-secondary">add a user</span></a>
+                  <!-- delete-a-user -->
+                  <a class="btn btn-outline-info border-0 btn-custom" data-toggle="pill" href="#delete-a-user" role="tab" aria-controls="v-pills-profile" aria-selected="false"><span><img src="../../icons/delete_user.png"></span><span class="badge badge-pill badge-secondary">delete a user</span></a>
+                  <!-- set-user-rights -->
+                  <a class="btn btn-outline-info border-0 btn-custom" data-toggle="pill" href="#user-rights" role="tab" aria-controls="v-pills-messages" aria-selected="false"><span><img src="../../icons/user_rights.png"></span><span class="badge badge-pill badge-secondary">set user rights</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Database button -->
+          <br>
+          <button class="panel-button" type="button" data-toggle="collapse" data-target="#database" aria-expanded="false" aria-controls="database"><span><img src="../../icons/database_settings.png"></span></button>
+          <!-- Collapse for admin button -->
+          <div class="collapse multi-collapse" id="database">
+            <div class="row">
+              <div class="col-3">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <!-- add a new collection -->
+                  <a class="btn btn-outline-info border-0 btn-custom" data-toggle="pill" href="#add-a-user" role="tab" aria-controls="v-pills-home" aria-selected="true"><span><img src="../../icons/add_user.png"></span><span class="badge badge-pill badge-secondary">add a new collection</span></a>
+                  <!-- delete an existing collection -->
+                  <a class="btn btn-outline-info border-0 btn-custom" data-toggle="pill" href="#delete-a-user" role="tab" aria-controls="v-pills-profile" aria-selected="false"><span><img src="../../icons/delete_user.png"></span><span class="badge badge-pill badge-secondary">delete an existing collection</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- User settings button -->
+          <br>
+          <button class="panel-button" type="button" data-toggle="collapse" data-target="#user-settings" aria-expanded="false" aria-controls="usersettings"><span><img src="../../icons/user_settings.png"></span></button>
+          <!-- Collapse for admin button -->
+          <div class="collapse multi-collapse" id="user-settings">
+            <div class="row">
+              <div class="col-3">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <!-- Change user password -->
+                  <a class="btn btn-outline-info border-0 btn-custom" data-toggle="pill" href="#user-password" role="tab" aria-controls="userpassword" aria-selected="false"><span><img src="../../icons/user_password.png" ></span><span class="badge badge-pill badge-secondary">Change my password</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+         </div>
+      </div>
+      <!-- Content Section-->
+      <div class="mainContent">
+        <div class="col-9">
+          <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade" id="add-a-user" role="tabpanel" aria-labelledby="add-a-user">add a user</div>
+            <div class="tab-pane fade" id="delete-a-user" role="tabpanel" aria-labelledby="delete-a-user">delete a user</div>
+            <div class="tab-pane fade" id="user-rights" role="tabpanel" aria-labelledby="user-rights">user rights</div>
+            <!-- User password -->
+            <div class="tab-pane fade" id="user-password" role="tabpanel" aria-labelledby="user-password">
+              <!-- Load the user password form -->
+              <div id="user-password-form">
+                <script>$("#user-password-form").load("./user-password/user-password.html")</script>
+              </div>            
+            </div>
+            
+            
+
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

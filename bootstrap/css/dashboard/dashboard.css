@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+
+.mainSection{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f1f1f1;
+}
+
+.mainPanel{
+  flex: 30%;
+  background-color: white;
+  padding: 10px;
+}
+
+.mainContent{
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+#dasbboard-menu-icon img{
+  width: 50px;
+  height: 50px;
+  margin: 10px 10px 10px 10px;
+}
+
+.panel-icons img{
+  width: 50px;
+  height: 50px;
+  margin-left: 20px;
+}
+
+/* Buttons */
+.menu-button{
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  background-color: white;
+}
+
+.menu-button:focus{
+  /* Hidding border outline on focus*/
+  outline: none;
+}
+
+.menu-button:hover{
+  opacity: 1;
+}
+
+.panel-button{
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  background-color: white;
+  padding-bottom: 12px;
+}
+
+.panel-button:focus{
+  /* Hidding border outline on focus*/
+  outline: none;
+}
+
+.panel-button:hover{
+  opacity: 1;
+}
+
+.btn.btn-custom{
+  width: 280px;
+  height: 50px;
+  text-align: left;
+}

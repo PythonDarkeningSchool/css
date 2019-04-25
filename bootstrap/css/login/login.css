@@ -1,0 +1,27 @@
+.alertContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  border: 2px solid green;
+  max-height: 30vh; /* set min container height to viewport height */
+  min-height: 30vh;
+}
+
+.alertItem{
+  align-self: center;
+  padding-top: 5px;
+  padding-bottom: 0px;
+}
+
+.buttonContainer{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  border: 2px solid green;
+  min-height: 70vh; /* set min container height to viewport height */
+  max-height: 70vh;
+}
+
+.buttonItem{
+  padding-top: 15vh;
+}
