@@ -12,6 +12,10 @@
   flex: 30%;
   background-color: white;
   padding: 10px;
+	border-right-style: solid;
+	border-right-width: 5px;
+	border-right-color: #EFEEEE;
+
 }
 
 .mainContent{

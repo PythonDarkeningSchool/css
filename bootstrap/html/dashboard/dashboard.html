@@ -34,13 +34,20 @@
               <div class="card-body">
                 <h6>Role <span class="badge badge-secondary">Developer</span></h6>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <button type="button" class="btn btn-outline-warning"><spam><img style="width: 30px;" src="../../icons/logout.png"></spam>Log out</button>
+								<!-- Load log out modal before create the button -->
+								<div id="logoutModaldiv">	
+									<script>$("#logoutModaldiv").load("./modals/log-out-modal.html")</script>
+								</div>
+								<!-- Trigger log-out-modal -->
+                <button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#logoutModal">
+										<spam><img style="width: 30px;" src="../../icons/logout.png"></spam>Log out
+								</button>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               </div>
             </div>
           </div>
         </div>
-        <!-- User Card -->
+        <!-- User Card/ -->
       </div>
     </div>
     
@@ -86,7 +93,7 @@
           <!-- User settings button -->
           <br>
           <button class="panel-button" type="button" data-toggle="collapse" data-target="#user-settings" aria-expanded="false" aria-controls="usersettings"><span><img src="../../icons/user_settings.png"></span></button>
-          <!-- Collapse for admin button -->
+          <!-- Collapse for settings button -->
           <div class="collapse multi-collapse" id="user-settings">
             <div class="row">
               <div class="col-3">
