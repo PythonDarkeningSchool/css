@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		
+  </head>
+  <body>
+		
+		<!-- Dashboard home button -->
+		<button class="panel-button" type="button" onClick="window.location.reload()"><span><img src="../../icons/dashboard_home.png"></span></button>
+		
+		<div class="panel-icons">
+			<!-- Admin button -->	
+			<button class="panel-button" type="button" data-toggle="collapse" data-target="#admin" aria-expanded="false" aria-controls="admin" data-placement="right" title="Manage users"><span><img src="../../icons/admin.png"></span>
+			</button>
+			<!-- Collapse for admin button -->
+			<div class="collapse multi-collapse" id="admin">
+				<div class="row">
+					<div class="col-3">
+						<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+							<!-- add-a-user -->
+							<a class="btn btn-outline-info border-0 btn-custom" data-toggle="pill" href="#add-a-user" role="tab" aria-controls="v-pills-home" aria-selected="true"><span><img src="../../icons/add_user.png"></span><span class="badge badge-pill badge-secondary">add a user</span></a>
+							<!-- delete-a-user -->
+							<a class="btn btn-outline-info border-0 btn-custom" data-toggle="pill" href="#delete-a-user" role="tab" aria-controls="v-pills-profile" aria-selected="false"><span><img src="../../icons/delete_user.png"></span><span class="badge badge-pill badge-secondary">delete a user</span></a>
+							<!-- set-user-rights -->
+							<a class="btn btn-outline-info border-0 btn-custom" data-toggle="pill" href="#user-rights" role="tab" aria-controls="v-pills-messages" aria-selected="false"><span><img src="../../icons/user_rights.png"></span><span class="badge badge-pill badge-secondary">set user rights</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Database button -->
+			<br>
+			<button class="panel-button" type="button" data-toggle="collapse" data-target="#database" aria-expanded="false" aria-controls="database" data-placement="right" title="Manage database"><span><img src="../../icons/database_settings.png"></span>
+			</button>
+			<!-- Collapse for admin button -->
+			<div class="collapse multi-collapse" id="database">
+				<div class="row">
+					<div class="col-3">
+						<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+							<!-- add a new collection -->
+							<a class="btn btn-outline-info border-0 btn-custom" data-toggle="pill" href="#add-a-user" role="tab" aria-controls="v-pills-home" aria-selected="true"><span><img src="../../icons/add_user.png"></span><span class="badge badge-pill badge-secondary">add a new collection</span></a>
+							<!-- delete an existing collection -->
+							<a class="btn btn-outline-info border-0 btn-custom" data-toggle="pill" href="#delete-a-user" role="tab" aria-controls="v-pills-profile" aria-selected="false"><span><img src="../../icons/delete_user.png"></span><span class="badge badge-pill badge-secondary">delete an existing collection</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- User settings button -->
+			<br>
+			<button class="panel-button" type="button" data-toggle="collapse" data-target="#user-settings" aria-expanded="false" aria-controls="user-settings" data-placement="right" title="My settings"><span><img src="../../icons/user_settings.png"></span>
+			</button>
+			<!-- Collapse for settings button -->
+			<div class="collapse multi-collapse" id="user-settings">
+				<div class="row">
+					<div class="col-3">
+						<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+							<!-- Change user password -->
+							<a class="btn btn-outline-info border-0 btn-custom" data-toggle="pill" href="#user-password" role="tab" aria-controls="user-password" aria-selected="false"><span><img src="../../icons/user_password.png" ></span><span class="badge badge-pill badge-secondary">Change my password</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- User summary button -->
+			<br>
+			<button class="panel-button" type="button" data-toggle="collapse" data-target="#user-info" aria-expanded="false" aria-controls="user-info" data-placement="right" title="My summary"><span><img src="../../icons/user_summary.png"></span>
+			</button>
+			<!-- Collapse for summary button -->
+			<div class="collapse multi-collapse" id="user-info">
+				<div class="row">
+					<div class="col-3">
+						<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+							<!-- Show user information -->
+							<a class="btn btn-outline-info border-0 btn-custom" data-toggle="pill" href="#user-summary" role="tab" aria-controls="user-summary" aria-selected="false"><span><img src="../../icons/user_info.png" ></span><span class="badge badge-pill badge-secondary">Information</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Search button -->
+			<br>
+			<button class="panel-button" type="button" data-toggle="collapse" data-target="#search-person" aria-expanded="false" aria-controls="serch-person" data-placement="right" title="Search users"><span><img src="../../icons/search_person.png"></span>
+			</button>
+			<!-- Collapse for search button -->
+			<div class="collapse multi-collapse" id="search-person">
+				<div class="row">
+					<div class="col-3">
+						<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+							<!-- Seach a person -->
+							<a class="btn btn-outline-info border-0 btn-custom" data-toggle="pill" href="#user-summary" role="tab" aria-controls="user-summary" aria-selected="false"><span><img src="../../icons/target.png" ></span><span class="badge badge-pill badge-secondary">Locate people</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		 </div>
+
+		
+		
+		<script>$(function () {
+			// initialize all tooltips 
+			$('[data-toggle="collapse"]').tooltip()})
+		</script>
+		
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
