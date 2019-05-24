@@ -10,28 +10,20 @@
     <!-- Jquery CDN (to load HTML pages) -->
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <!-- Custom CSS-->
-    <link rel="stylesheet" href="../../css/login/login.css">
+    <link rel="stylesheet" href="./css/login/login.css">
 
   </head>
   <body>
     
     <div class="alertContainer">
+     <!-- Alerts -->
       <div class="alertItem">
-        
-        <div class="alert alert-warning alert-dismissible fade show" role="alert">
-          <strong>Holy guacamole!</strong> You should check in on some of those fields below
+        <!-- Alert messsage -->
+        <div class="alert alert-warning alert-dismissible fade show" role="alert" style="display: none;" id="login-alert">
           <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-
-        <div class="alert alert-warning alert-dismissible fade show" role="alert">
-          <strong>Holy guacamole!</strong> You should check in on some of those fields below
-          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-    
       </div>
     </div>
 
@@ -48,7 +40,6 @@
         <script>$("#request-modal").load("./login/modals/request-modal.html")</script>
       </div>
     </div>
-
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

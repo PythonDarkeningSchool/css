@@ -7,9 +7,13 @@ var path = require('path');
 var mongoUtil = require("../database/mongoConnection");
 var app = express();
 var collection = "users";
+var rootPath = path.join(__dirname, "../../../");
+var mongoFolder = path.join(rootPath, "mongo");
+var htmlFolder = path.join(rootPath, "html");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname, "../../../html")));
+app.use(express.static(htmlFolder));
+app.use(express.static(mongoFolder));
 var addEndPoint = (function () {
     function addEndPoint() {
     }

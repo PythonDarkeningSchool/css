@@ -12,10 +12,17 @@ let mongoUtil = require( "../database/mongoConnection" );
 // Define variables
 let app = express();
 let collection = "users";
+// Paths to server static files
+let rootPath = path.join(__dirname, "../../../"); // points to bootstrap
+let mongoFolder = path.join(rootPath, "mongo");
+let htmlFolder = path.join(rootPath, "html");
 
 app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 app.use(bodyParser.json()); // support json encoded bodies
-app.use(express.static(path.join(__dirname, "../../../html"))); // TO SERVER ALL FILES INTO HTML FOLDER!!!
+// Serve static files
+app.use(express.static(htmlFolder)); // TO SERVER ALL FILES INTO HTML FOLDER!!!
+app.use(express.static(mongoFolder)); // TO SERVER ALL FILES INTO Mongo FOLDER!!!
+
 
 export class addEndPoint{
 
